@@ -1,2 +1,2 @@
 # MySingleGpuPassthrough
-Un Single Gpu Passthrough para mi Nvidia GTX980
+Hooks Scritps para mi Single Gpu Passthrough con Nvidia GTX980
