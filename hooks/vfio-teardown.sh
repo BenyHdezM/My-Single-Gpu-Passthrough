@@ -27,6 +27,8 @@ while read consoleNumber; do
   fi
 done < "$input"
 
+nvidia-xconfig --query-gpu-info > /dev/null 2>&1
+
 # Rebind framebuffer for nvidia
 if test -e "/tmp/vfio-is-nvidia" ; then
   echo "efi-framebuffer.0" > /sys/bus/platform/drivers/efi-framebuffer/bind
